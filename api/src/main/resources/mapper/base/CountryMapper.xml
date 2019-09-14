@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jm.mes.api.base.mapper.CountryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="jm.mes.api.base.entity.Country">
+        <id column="Code" property="Code" />
+        <result column="Name" property="Name" />
+        <result column="Continent" property="Continent" />
+        <result column="Region" property="Region" />
+        <result column="SurfaceArea" property="SurfaceArea" />
+        <result column="IndepYear" property="IndepYear" />
+        <result column="Population" property="Population" />
+        <result column="LifeExpectancy" property="LifeExpectancy" />
+        <result column="GNP" property="gnp" />
+        <result column="GNPOld" property="GNPOld" />
+        <result column="LocalName" property="LocalName" />
+        <result column="GovernmentForm" property="GovernmentForm" />
+        <result column="HeadOfState" property="HeadOfState" />
+        <result column="Capital" property="Capital" />
+        <result column="Code2" property="Code2" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Code, Name, Continent, Region, SurfaceArea, IndepYear, Population, LifeExpectancy, GNP, GNPOld, LocalName, GovernmentForm, HeadOfState, Capital, Code2
+    </sql>
+
+</mapper>

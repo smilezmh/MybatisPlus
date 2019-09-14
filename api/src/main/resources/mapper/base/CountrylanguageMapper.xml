@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jm.mes.api.base.mapper.CountrylanguageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="jm.mes.api.base.entity.Countrylanguage">
+        <id column="CountryCode" property="CountryCode" />
+        <result column="Language" property="Language" />
+        <result column="IsOfficial" property="IsOfficial" />
+        <result column="Percentage" property="Percentage" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CountryCode, Language, IsOfficial, Percentage
+    </sql>
+
+</mapper>
